@@ -1,0 +1,43 @@
+header {
+    border: 1px solid #000;
+    background: rgb(211, 168, 49);  
+}
+header::before {
+    content: 'before';
+    display:block;
+    height: 30px;
+    background: yellowgreen;
+}
+header::after {
+   content: 'after';
+   display:block;
+   height: 30px;
+   background: rgb(50, 205, 205);
+}
+.first {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    background: rgb(122, 211, 49); 
+}
+.second {
+    border: 1px solid #000;
+    background: rgb(73, 49, 211);
+    height: 100px;
+    width: 100px;
+    float:left;
+}
+.third {
+    border: 1px solid #000;
+    background: rgb(73, 49, 211);
+    height: 100px;
+    width: 100px;
+    float:right;
+}
+footer {
+    border: 1px solid #000;
+    background: rgb(211, 49, 71);
+    clear:both;
+}
+.main {
+    background: orange;
+}
