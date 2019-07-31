@@ -1,0 +1,18 @@
+.text-blocks {
+    padding: 40px 20px;
+  
+    &__basic {
+      text-align: left;
+      padding-bottom: 30px;
+      position: relative;
+
+    &:after {
+      content: "read more...";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: orange;
+      cursor: pointer;
+    }
+  }
+}

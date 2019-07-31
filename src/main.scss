@@ -1,3 +1,134 @@
-* {
-    outline: 1px solid red;
+body {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    position: relative;
+    height: 100px;
+}
+.logo {
+    margin-left:132px;
+    float: left;
+    width: 100px;
+    height: 80px;
+}
+.toplogo, .downlogo {
+    display:inline-block;
+}
+.toplogo {
+    color:#fb9c06;
+    float:left;
+    margin-top:20px;
+}
+.downlogo {
+    color:#6e6d6b;
+    text-transform: uppercase;
+    clear: both;
+    margin-left: -45px;
+    margin-top:40px;
+    font-weight: bold;
+}
+.buttons {
+    float: right;
+    margin-right:23%
+}
+button {
+    border:none;
+    background-color:#fff;
+    cursor: pointer;
+    color: #6e6d6bc5;
+    font-weight: bold;
+}
+.slider {
+    border-top:3px solid #fb9c06;
+    border-bottom:3px solid #fb9c06;
+    background: url(/img/bigorange.jpg);
+    background-size: cover;
+    position: absolute;
+}
+.likefirst, .likesecond {
+    text-transform: uppercase;
+    padding: 5px 5px 5px 15px;
+}
+.likefirst { 
+    background-color:#6e6d6bd2;
+    color:#fb9c06;
+    margin:50px 905px 15px 150px;
+} 
+.likesecond { 
+    background-color: #fb9d06ab;
+    color:#6e6d6b;
+    margin:20px 905px 50px 150px;
+}
+.wrapper {
+    margin: 0 125px 0 125px;
+    max-width: 1349px;
+}
+/*.fourblocks {
+    display: flex;
+    justify-content: space-around;
+    margin: 200px 0px 15px 15px;
+}  
+.block {
+    width: 23%;   
+}
+.read {
+    font-style: italic;
+    color: #fb9c06;
+    padding-left: 145px;
+    text-decoration: none;
+}*/
+.captn {
+    color: #fb9c06;
+    font-size: 22px;
+    text-align:center;
+    text-decoration: underline;
+}
+@import "./partials/text-blocks/text-blocks.scss";
+
+.fourblocks {
+  display: flex;
+  margin-top:170px;
+
+  &__subitem {
+    width: 25%;
+  }
+}
+@import "./partials/user-card/user-card.scss";
+
+.three-column {
+  display: flex;
+
+  &__item {
+    width: 33%;
+  }
+}
+.forms {
+    border:none;
+    color: #fb9c06;
+    font-size: 15px;
+    margin: 50px 70px 30px 70px;
+}
+
+input {
+    padding-bottom: 20px;
+    background: #080808fd;
+    border:none; 
+    min-width: 800px;
+}   
+.sub {
+    color:#fff;
+    background-color: #fb9c06;
+    box-shadow:0 1px 1px #cc830f;
+    float: right;
+    margin: 20px;
+}
+footer {
+    background-color: #fb9c06;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow:0 3px 2px #cc830f;
+    margin-bottom: 5px;
+    height: 20px;
 }

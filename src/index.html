@@ -5,9 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/main.css">
-    <title>it-academy</title>
+    <title>Домашнее задание 5</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <header>
+        <img src="./img/rabbitlogo.png" alt="rabbit" class="logo">
+        <p class="toplogo">orange</p>
+        <p class="downlogo">rabbit</p>
+        <div class=buttons>
+           <button><img src="./img/house.png"><figcaption>home</figcaption></button>
+           <button><img src="./img/i.png"><figcaption>about</figcaption></button>
+           <button><img src="./img/work.png"><figcaption>work</figcaption></button>
+           <button><img src="./img/earth.png"><figcaption>blog</figcaption></button>
+           <button><img src="./img/mail.png"><figcaption>contact</figcaption></button>
+        </div>
+    </header>
+        <div class="slider">
+            <p class="likefirst">Do you like rabbits?</p>
+            <p class="likesecond">Do you like orange?</p>
+        </div>
+    <div class="wrapper">
+        <div class="fourblocks">
+            <div class="fourblocks__subitem">
+                @@include('./partials/text-blocks/_text-blocks.html', {
+                 "basicText": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+                 })
+            </div>
+            <div class="fourblocks__subitem">
+                @@include('./partials/text-blocks/_text-blocks.html', {
+                "basicText": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+                 })
+            </div>
+            <div class="fourblocks__subitem">
+                @@include('./partials/text-blocks/_text-blocks.html', {
+                "basicText": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+               })
+            </div>
+            <div class="fourblocks__subitem">
+                @@include('./partials/text-blocks/_text-blocks.html', {
+                "basicText": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+                })
+            </div>
+        </div>
+    <div class="captn">Meet the teem</div>
+     <div class="three-column">
+      <div class="three-column__item">
+        @@include('./partials/user-card/_user-card.html', {
+          "userName": "Hoof",
+          "userPosition": "Lead Designer",
+          "pathUserImg": "./img/rabbit.jpg",
+          "userDescription": "Hoof is our most talanted designer. However he's not the talketive type and I would advise not getting on the wrong side of him."
+        })
+      </div>
+      <div class="three-column__item">
+        @@include('./partials/user-card/_user-card.html', {
+          "userName": "Nibs",
+          "userPosition": "CEO/Director",
+          "pathUserImg": "./img/rabbit.jpg",
+          "userDescription": "Nibs is our go to women. She's the ceo/director of orange rabbit and runs fast when she has too."
+        })
+      </div>
+      <div class="three-column__item">
+        @@include('./partials/user-card/_user-card.html', {
+          "userName": "Squawk",
+          "userPosition": "Developer",
+          "pathUserImg": "./img/rabbit.jpg",
+          "userDescription": "Squawk is not social bunny. But when it comes to programming he stands out from the crowd."
+        })
+      </div>
+    </div>
+    <div class="captn">Send us a message...</div>
+    <div class="forms"> 
+        <form>
+            <label>Name:
+                <input type="text">
+            </label>
+        </form>
+        <form>
+            <label>Email:
+                <input type="text">
+            </label>
+        </form>
+        <form>
+            <label>Message:
+                <input type="text" class="lastinp">
+            </label>
+        </form>
+        <button class=sub>Submit</button>
+    </div>
+    </div>
+    <footer>
+        copyright orange rabbit - designed by jake bhatt.
+    </footer>
 </body>
 </html>
