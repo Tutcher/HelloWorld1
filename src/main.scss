@@ -37,13 +37,14 @@ button {
     background-size: cover;
     position: relative;
     height: 300px;
+    width: 1263px;
 }
 .text-slider {
     position: absolute;
-    margin-top:60px;
-    margin-left: 100px;
+    top:60px;
+    left: 100px;
     height: 210px;
-    width: 700px;
+    
 }
 .text-slider>div {
     margin:50px 0 0 40px;
@@ -69,7 +70,7 @@ button {
 .wrapper {
     margin: 0 125px 0 125px;
     max-width: 1024px;
-    min-width: 500px;
+    min-width: 700px;
 }
 .captn {
     color: #fb9c06;
@@ -94,7 +95,7 @@ button {
 
   &__item {
     width: 33%;
-  }
+ }
 }
 .fldst {
     border:none;
@@ -136,6 +137,7 @@ form>input,footer {
 footer {
     height: 30px;
     clear: both;
+    width: 1263px;
 }
 footer>p {
     text-transform: uppercase;

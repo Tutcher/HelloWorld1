@@ -1,5 +1,5 @@
 .user-card {
-    padding: 20px 20px 20px 20px;
+  padding: 20px 0px;
   
     &__header {
       text-align: center;
@@ -23,8 +23,8 @@
       }
     }
     &__description {
-      text-align: left;
-      padding: 20px 50px 14px 50px;
+      text-align: justify;
+      padding: 20px 20px 14px;
       color: #6e6d6bc5;
       font-size: 12px;
     }
