@@ -5,32 +5,23 @@ body {
 header {
     position: relative;
     height: 100px;
+    z-index: 10;  
+}
+header>div {
+    position: fixed;
+    background: #fff; 
+    width: 100%;
+    border-bottom:3px solid #fb9c06;
 }
 .logo {
-    margin-left:132px;
+    margin-left:146px;
     float: left;
-    width: 100px;
-    height: 80px;
-}
-.toplogo, .downlogo {
-    display:inline-block;
-}
-.toplogo {
-    color:#fb9c06;
-    float:left;
-    margin-top:20px;
-}
-.downlogo {
-    color:#6e6d6b;
-    text-transform: uppercase;
-    clear: both;
-    margin-left: -45px;
-    margin-top:40px;
-    font-weight: bold;
+    width: 200px;
+    height: 100px;
 }
 .buttons {
     float: right;
-    margin-right:23%
+    margin-right:13%  
 }
 button {
     border:none;
@@ -44,51 +35,53 @@ button {
     border-bottom:3px solid #fb9c06;
     background: url(/img/bigorange.jpg);
     background-size: cover;
-    position: absolute;
+    position: relative;
+    height: 300px;
 }
-.likefirst, .likesecond {
+.text-slider {
+    position: absolute;
+    margin-top:60px;
+    margin-left: 100px;
+    height: 210px;
+    width: 700px;
+}
+.text-slider>div {
+    margin:50px 0 0 40px;
+    width: 270px;
     text-transform: uppercase;
-    padding: 5px 5px 5px 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.likefirst,.likesecond {
+    height: 27px;
+    text-align: center; 
 }
 .likefirst { 
     background-color:#6e6d6bd2;
     color:#fb9c06;
-    margin:50px 905px 15px 150px;
+    margin:10px 10px 10px 5px;   
 } 
 .likesecond { 
     background-color: #fb9d06ab;
     color:#6e6d6b;
-    margin:20px 905px 50px 150px;
+    margin:20px 10px 10px 5px; 
 }
 .wrapper {
     margin: 0 125px 0 125px;
-    max-width: 1349px;
+    max-width: 1024px;
+    min-width: 500px;
 }
-/*.fourblocks {
-    display: flex;
-    justify-content: space-around;
-    margin: 200px 0px 15px 15px;
-}  
-.block {
-    width: 23%;   
-}
-.read {
-    font-style: italic;
-    color: #fb9c06;
-    padding-left: 145px;
-    text-decoration: none;
-}*/
 .captn {
     color: #fb9c06;
     font-size: 22px;
     text-align:center;
     text-decoration: underline;
+    margin-bottom: 10px;
 }
 @import "./partials/text-blocks/text-blocks.scss";
 
 .fourblocks {
   display: flex;
-  margin-top:170px;
 
   &__subitem {
     width: 25%;
@@ -103,32 +96,54 @@ button {
     width: 33%;
   }
 }
-.forms {
+.fldst {
     border:none;
+}
+.fldst p {
+    margin-left: 5px;
     color: #fb9c06;
-    font-size: 15px;
-    margin: 50px 70px 30px 70px;
 }
-
-input {
-    padding-bottom: 20px;
-    background: #080808fd;
-    border:none; 
-    min-width: 800px;
-}   
-.sub {
-    color:#fff;
-    background-color: #fb9c06;
-    box-shadow:0 1px 1px #cc830f;
+.nolast {
+    width: 91%;
+    height: 15px;
+    margin-left: 30px;
+}
+.last {
+    width: 91%;
+    height: 50px;
+    margin-left: 12px;
+}
+.nolast,.last {
+    background: #6e6d6b33;
+    border: none;
+}
+.lastlab {
+    vertical-align: top;
+}
+form>input {
+    color: #fff;
     float: right;
-    margin: 20px;
+    margin: 5px 50px 20px;
+    border: none;
+    width: 80px;
+    cursor: pointer;
 }
-footer {
+form>input,footer {
+    box-shadow:0 3px 2px #cc830f;
     background-color: #fb9c06;
     color: #fff;
+}
+footer {
+    height: 30px;
+    clear: both;
+}
+footer>p {
     text-transform: uppercase;
-    text-align: center;
-    box-shadow:0 3px 2px #cc830f;
-    margin-bottom: 5px;
-    height: 20px;
+    padding-top: 5px;
+    text-align: center; 
+}
+@media screen and (width:500px){
+    .buttons{
+        float: left;
+    }
 }
