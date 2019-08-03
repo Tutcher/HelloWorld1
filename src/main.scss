@@ -1,3 +1,32 @@
-* {
-    outline: 1px solid red;
+@import "./normalize.scss";
+
+header {
+    position: relative;
+    height: 1000px;
+    z-index: 10;  
+    background: url(/img/firstbackgr.jpg) no-repeat;
+    background-size: cover;
+}
+.menu {
+    position: fixed;
+    background:rgba(0, 0, 0, 0.205); 
+    width: 100%;
+    display:block;
+
+}
+.logo {
+    margin:10px 50px 10px 146px;
+    float: left;
+    width: 250px;
+    height: 60px;
+}
+.menu-item {
+    margin: 10px 50px 10px 50px;
+}
+p {
+    border:none;
+    text-transform: uppercase;
+    cursor: pointer;
+    color:#fff;
+    clear: both;
 }
