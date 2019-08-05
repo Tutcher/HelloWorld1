@@ -14,14 +14,14 @@ header>div {
     border-bottom:3px solid #fb9c06;
 }
 .logo {
-    margin-left:146px;
+    margin-left:133px;
     float: left;
     width: 200px;
     height: 100px;
 }
 .buttons {
     float: right;
-    margin-right:13%  
+    margin-right:12%  
 }
 button {
     border:none;
@@ -43,8 +43,7 @@ button {
     position: absolute;
     top:60px;
     left: 100px;
-    height: 210px;
-    
+    height: 210px; 
 }
 .text-slider>div {
     margin:50px 0 0 40px;
@@ -92,7 +91,7 @@ button {
 
 .three-column {
   display: flex;
-
+  
   &__item {
     width: 33%;
  }
@@ -109,14 +108,16 @@ button {
     height: 15px;
     margin-left: 30px;
 }
-.last {
-    width: 91%;
+textarea {
     height: 50px;
     margin-left: 12px;
+    overflow: hidden;
+    resize: none;
 }
-.nolast,.last {
+.nolast,textarea {
     background: #6e6d6b33;
     border: none;
+    box-shadow: 1px 2px 3px -3px #000000 inset;
 }
 .lastlab {
     vertical-align: top;
