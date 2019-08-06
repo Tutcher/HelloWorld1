@@ -1,10 +1,11 @@
 .text-blocks {
-    padding: 20px;
+    padding: 20px 20px 30px;
   
     &__basic {
       text-align: left;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
       position: relative;
+      font:bold 12px Calibri,sans-serif;
 
     &:after {
       content: "read more...";
@@ -13,6 +14,7 @@
       right: 10px;
       color: orange;
       cursor: pointer;
+      font-style: italic;
     }
   }
 }
