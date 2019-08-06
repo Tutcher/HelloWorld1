@@ -1,27 +1,24 @@
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 header {
     position: relative;
     height: 100px;
-    z-index: 10;  
+    z-index: 1;
 }
-header>div {
+header {
     position: fixed;
-    background: #fff; 
+    background: #fff;
     width: 100%;
-    border-bottom:3px solid #fb9c06;
 }
 .logo {
-    margin-left:133px;
     float: left;
     width: 200px;
     height: 100px;
 }
 .buttons {
     float: right;
-    margin-right:140px;  
 }
 button {
     border:none;
@@ -37,13 +34,12 @@ button {
     background-size: cover;
     position: relative;
     height: 300px;
-    width: 1280px;
 }
 .text-slider {
     position: absolute;
     top:60px;
     left: 100px;
-    height: 210px; 
+    height: 210px;
 }
 .text-slider>div {
     margin:50px 0 0 40px;
@@ -54,20 +50,20 @@ button {
 }
 .likefirst,.likesecond {
     height: 27px;
-    text-align: center; 
+    text-align: center;
 }
-.likefirst { 
+.likefirst {
     background-color:#6e6d6bd2;
     color:#fb9c06;
-    margin:10px 10px 10px 5px;   
-} 
-.likesecond { 
+    margin:10px 10px 10px 5px;
+}
+.likesecond {
     background-color: #fb9d06ab;
     color:#6e6d6b;
-    margin:20px 10px 10px 5px; 
+    margin:20px 10px 10px 5px;
 }
 .wrapper {
-    margin: 0 125px 0 125px;
+    margin: 0 auto;
     max-width: 1024px;
     min-width: 500px;
 }
@@ -91,7 +87,7 @@ button {
 
 .three-column {
   display: flex;
-  
+
   &__item {
     width: 33%;
  }
@@ -141,12 +137,11 @@ form>input,footer {
 footer {
     height: 30px;
     clear: both;
-    width: 1280px;
 }
-footer>p {
+footer p {
     text-transform: uppercase;
     padding-top: 5px;
-    text-align: center; 
+    text-align: center;
     font-family: "St-Marie",sans-serif;
     font-size: 18px;
 }
@@ -156,16 +151,15 @@ footer>p {
     }
 }
 @font-face {
-    font-family: "Bebas"; 
-    src: url("../fonts/bebasUpperBold.ttf") format("truetype"); 
-    } 
-        
-@font-face { 
-    font-family: "St-Marie"; 
-    src: url("../fonts/st-marie.ttf") format("truetype"); 
-    } 
+    font-family: "Bebas";
+    src: url("../fonts/bebasUpperBold.ttf") format("truetype");
+    }
 
+@font-face {
+    font-family: "St-Marie";
+    src: url("../fonts/st-marie.ttf") format("truetype");
+    }
 
-
-    
-        
+.main-content {
+    padding-top: 102px;
+}
