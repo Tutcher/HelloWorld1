@@ -11,22 +11,39 @@ header {
     position: fixed;
     background:rgba(0, 0, 0, 0.205); 
     width: 100%;
-    display:block;
-
+    height: 50px;  
 }
 .logo {
-    margin:10px 50px 10px 146px;
-    float: left;
-    width: 250px;
-    height: 60px;
+    font-family: "Scriptina";
+    margin-left:133px;
+    color: #fff;
+    font-size: 40px;
+    float:left;
 }
 .menu-item {
-    margin: 10px 50px 10px 50px;
+    margin: 25px 100px 25px 300px;
 }
-p {
+.menu-item>div { 
+    display: inline-block;
     border:none;
     text-transform: uppercase;
-    cursor: pointer;
     color:#fff;
-    clear: both;
+    font-family: "Alegreya"; 
+       
 }
+.menu-item>div:after {
+    content: "~";
+    padding: 25px 30px;
+    color:#fff
+  }
+  .menu-item>div:last-child:after {
+    content: " ";
+  }
+@font-face {
+    font-family: "Scriptina"; 
+    src: url("../fonts/scriptina.ttf") format("truetype"); 
+    } 
+@font-face {
+    font-family: "Alegreya"; 
+    src: url("../fonts/alegreya.ttf") format("truetype"); 
+    } 
