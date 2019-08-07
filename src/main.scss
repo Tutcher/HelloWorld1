@@ -15,7 +15,7 @@ header {
 .logo {
     float: left;
     width: 200px;
-    height: 100px;
+    height: 98px;
 }
 .buttons {
     float: right;
@@ -65,7 +65,7 @@ button {
 .wrapper {
     margin: 0 auto;
     max-width: 1024px;
-    min-width: 500px;
+    min-width: 600px;
 }
 .captn {
     color: #fb9c06;
@@ -95,13 +95,11 @@ button {
 .fldst {
     border:none;
 }
-.fldst p {
-    margin-left: 5px;
+.fldst div {
     color: #fb9c06;
     font-family: "St-Marie",sans-serif;
 }
 .nolast {
-    width: 880px;
     height: 15px;
     margin-left: 30px;
 }
@@ -115,51 +113,47 @@ textarea {
     background: #6e6d6b33;
     border: none;
     box-shadow: 1px 2px 3px -3px #000000 inset;
+    margin-bottom: 7px;  
 }
 .lastlab {
     vertical-align: top;
 }
-form>input {
+.sub {
+    text-align: right;  
+}
+.subinp {
     color: #fff;
-    float: right;
-    margin: 5px 50px 20px;
     border: none;
     width: 80px;
     cursor: pointer;
     font-family: "St-Marie",sans-serif;
     font-size: 16px;
+    margin: 0 70px 20px 0;
 }
-form>input,footer {
+.subinp,footer {
     box-shadow:0 3px 2px #cc830f;
     background-color: #fb9c06;
     color: #fff;
 }
 footer {
     height: 30px;
-    clear: both;
+   
 }
-footer p {
+footer div {
     text-transform: uppercase;
-    padding-top: 5px;
+    padding-top: 2px;
     text-align: center;
     font-family: "St-Marie",sans-serif;
     font-size: 18px;
-}
-@media screen and (width:500px){
-    .buttons{
-        float: left;
-    }
 }
 @font-face {
     font-family: "Bebas";
     src: url("../fonts/bebasUpperBold.ttf") format("truetype");
     }
-
 @font-face {
     font-family: "St-Marie";
     src: url("../fonts/st-marie.ttf") format("truetype");
     }
-
 .main-content {
     padding-top: 102px;
 }
