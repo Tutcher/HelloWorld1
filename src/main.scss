@@ -3,7 +3,7 @@
 header {
     position: relative;
     height: 1000px;
-    z-index: 10;  
+    z-index: 1;  
     background: url(/img/firstbackgr.jpg) no-repeat;
     background-size: cover;
 }
@@ -19,6 +19,7 @@ header {
     color: #fff;
     font-size: 40px;
     float:left;
+    text-transform:capitalize;
 }
 .menu-item {
     margin: 25px 100px 25px 300px;
@@ -28,8 +29,7 @@ header {
     border:none;
     text-transform: uppercase;
     color:#fff;
-    font-family: "Alegreya"; 
-       
+    font-family: "Alegreya";    
 }
 .menu-item>div:after {
     content: "~";
@@ -38,6 +38,9 @@ header {
   }
   .menu-item>div:last-child:after {
     content: " ";
+  }
+.icon {
+    background:rgba(0, 0, 0, 0.205); 
   }
 @font-face {
     font-family: "Scriptina"; 
