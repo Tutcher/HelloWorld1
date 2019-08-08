@@ -3,11 +3,8 @@ body {
     padding: 0;
 }
 header {
-    position: relative;
     height: 100px;
     z-index: 1;
-}
-header {
     position: fixed;
     background: #fff;
     width: 100%;
@@ -34,6 +31,7 @@ button {
     background-size: cover;
     position: relative;
     height: 300px;
+    min-width: 700px;
 }
 .text-slider {
     position: absolute;
@@ -92,31 +90,38 @@ button {
     width: 33%;
  }
 }
-.fldst {
-    border:none;
+.wrapper-2 {
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
 }
-.fldst div {
+.form-group-2-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+}
+.form-group-2 {
+    display: flex;
+    margin: 10px 0;
+    width: 100%;
+}
+.form-group-2 label {
+    flex: 1;
+    text-align: left;
     color: #fb9c06;
     font-family: "St-Marie",sans-serif;
 }
-.nolast {
-    height: 15px;
-    margin-left: 30px;
-}
-textarea {
-    height: 50px;
-    margin-left: 12px;
-    overflow: hidden;
-    resize: none;
-}
-.nolast,textarea {
+.form-group-2 input,textarea{
+    flex: 14;
+    margin: auto 10px;
     background: #6e6d6b33;
-    border: none;
+    border:none;
     box-shadow: 1px 2px 3px -3px #000000 inset;
-    margin-bottom: 7px;  
 }
-.lastlab {
-    vertical-align: top;
+.form-group-2 textarea {
+    height: 50px; 
+    resize: none;
 }
 .sub {
     text-align: right;  
@@ -136,8 +141,8 @@ textarea {
     color: #fff;
 }
 footer {
-    height: 30px;
-   
+    height: 30px; 
+    min-width: 700px;
 }
 footer div {
     text-transform: uppercase;
