@@ -5,23 +5,123 @@ body {
     font-family: "ProximaNova";
     font-size: 14px;
     color:#56534c;
+    background-color: #fff;
+    width: 1600px;
 }
 *,*:before,*:after {
     box-sizing: border-box;
 }
 .container {
-    width:100%;
     max-width: 1260px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 header {
-     padding:15px 0;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width: 1600px;
+    background:rgba(0, 0, 0, 0.205);
 }
 .inner {
     display:flex;
     justify-content: space-between;
-    background:#56534c;
+    align-items: center;
+    padding:15px 0;
+    height: 70px;
 }
+.logo {
+    font-family: "Scriptina";
+    font-size: 30px;
+    color:#fff;
+    text-transform:capitalize;
+    letter-spacing: 6px;
+  
+}
+nav {
+    display:flex;
+}
+.link { 
+    text-transform: uppercase;
+    color:#fff;
+    font-family: "Alegreya";
+    text-decoration: none;    
+}
+.link:after {
+    content: "~";
+    padding: 25px 40px;
+    color:#fff
+  }
+.link:last-child:after {
+    content: " ";
+  }
+.linkimg {
+    padding-top:10px;
+}
+.linkcenter {
+    margin:0 28px;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 900px;
+    background: url(/img/firstbackgr.jpg) no-repeat;
+    background-size: cover;
+    background-color: #9b9990;
+    padding-top:285px;
+}
+.introinner {
+    width: 100%;
+    max-width: 770px;
+    margin:0 auto;
+    text-shadow: 0 0 1px black;
+    color: #fff;
+    text-align: center;
+}
+.introtitle {
+    margin:0;
+    font-family: "PlayfairDisplay"; 
+    font-size: 92px;
+    margin: 0 0 55px;
+    letter-spacing: 5px;
+}
+.wave {
+    margin-bottom: 70px; 
+}
+.introsubtitle {
+    font-size: 24px;
+    font-family: "ProximaNova"; 
+    margin-bottom: 68px;
+    letter-spacing: 3px;
+    line-height: 35px;
+}
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "alegreya-bold";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background:rgba(0, 0, 0, 0.205);
+    border:1px dashed rgba(255, 255, 255,.5);
+    padding: 20px 50px;
+    letter-spacing: 3px;
+    margin-bottom: 180px;
+}
+.circle {
+    background-color: #fff;
+    border-radius: 50%;
+    display:block;
+    margin:auto;
+    width: 80px;
+    height: 80px;
+}
+.circle img{
+    padding-top:18px;
+}
+
+
 /*header {
     display: flex;
     justify-content: space-between;
@@ -74,7 +174,15 @@ a {
     font-family: "Alegreya"; 
     src: url("../fonts/alegreya.ttf") format("truetype"); 
     } 
+    @font-face {
+        font-family: "alegreya-bold"; 
+        src: url("../fonts/alegreya-bold.ttf") format("truetype"); 
+        } 
 @font-face {
     font-family: "ProximaNova"; 
     src: url("../fonts/ProximaNova.ttf") format("truetype"); 
     } 
+ @font-face {
+    font-family: "PlayfairDisplay"; 
+    src: url("../fonts/PlayfairDisplay.ttf") format("truetype"); 
+} 
