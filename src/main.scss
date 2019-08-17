@@ -80,6 +80,17 @@ nav {
     color: #fff;
     text-align: center;
 }
+.breadshadow .shadow {
+    display: block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: -2px 1px 197px 71px rgba(0,0,0,0.36);
+    background-color:
+    z-index:1;
+}
 .introtitle {
     margin:0;
     font-family: "PlayfairDisplay"; 
@@ -251,62 +262,20 @@ position: relative;
     background: url(/img/placeholder.jpg) no-repeat;
     background-size: cover;
 }
+@import "./partials/star-item/star-item.scss";
 
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
 
-/*
-.artOfPicta img:before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    border: 10px solid #fff;
-    z-index: 1;
-}header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    height: 1000px; 
-    background: url(/img/firstbackgr.jpg) no-repeat;
-    background-size: cover;
+[id*="star"]:checked ~ .star__label,
+[id*="star"]:hover ~ .star__label,
+[id*="star"]:checked + .star__label,
+[id*="star"]:hover + .star__label  {
+    background-image: url("/img/star-gold.png");
 }
-a {
-    color: #fff;
-    text-decoration: none;
-}
-.header-section{
-    display: flex;
-    align-items: center;
-    background:rgba(0, 0, 0, 0.205); #56534c
-    width: 100%;
-    height: 50px;  
-}
-.itembutton {
-    padding: 10px 15px;
-    font-size: 20px;
-    margin-left: 5px;
-    text-transform: uppercase;
-    color:#fff;
-    font-family: "Alegreya";    
-}
-.logo {
-    font-family: "Scriptina";
-    color: #fff;
-    font-size: 40px;
-    text-transform:capitalize;
-}
-.wave:after {
-    content: "~";
-    padding: 25px 30px;
-    color:#fff
-  }
-.wave:last-child:after {
-    content: " ";
-  }
-.icon {
-    background:rgba(0, 0, 0, 0.205); 
-  }*/
 @font-face {
     font-family: "Scriptina"; 
     src: url("../fonts/scriptina.ttf") format("truetype"); 
