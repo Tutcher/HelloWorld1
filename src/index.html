@@ -31,12 +31,9 @@
     <div class="intro">
         <div class="container">
             <div class="introinner">
-                <div class="shadow">
                 <div class="introtitle">Pastry with love</div>
-                <div class="breadshadow"><div class="shadow"><p></p></div></div>
                 <div class="wave"><img src="./img/dashedLine.png"></div>
                 <div class="introsubtitle">We’re bringing you fresh ingredients every<br> day in ways you can’t resist.</div>
-            </div>
                 <a class="btn" href="#">our menu</a>
                 <div class="circle"><img src="./img/bulka.png"></div>
             </div>
@@ -77,17 +74,67 @@
 </div>
 </div>
 <div class="perfect">
-    
-    <div class="container">
-            <div class="rating">
-                    @@include('./partials/star-item/_star-item.html', {"starId": "1"})
-                    @@include('./partials/star-item/_star-item.html', {"starId": "2"})
-                    @@include('./partials/star-item/_star-item.html', {"starId": "3"})
-                    @@include('./partials/star-item/_star-item.html', {"starId": "4"})
-                    @@include('./partials/star-item/_star-item.html', {"starId": "5"})
-                  </div>
+    <div class="container1">
+        <div class="content">
+                <div class="whitefon"><img src="./img/whitefon.png"></div>
+            <div class="jam"><img src="./img/jam.jpg"> </div>
+            <div class="tasty">
+                <div class="tasty-title">Tasty pancakes</div>
+                <div class="season">season favourite</div>
+                <div class="tasty-text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</div>
+                <div class="rating">
+                        @@include('./partials/star-item/_star-item.html', {"starId": "1"})
+                        @@include('./partials/star-item/_star-item.html', {"starId": "2"})
+                        @@include('./partials/star-item/_star-item.html', {"starId": "3"})
+                        @@include('./partials/star-item/_star-item.html', {"starId": "4"})
+                        @@include('./partials/star-item/_star-item.html', {"starId": "5"})
+                      </div>
+                      <div class="slaider">
+                          <div><img src="./img/left.png" class="arrow"></div>
+                          <div><img src="./img/slaider1.png"></div>
+                          <div><img src="./img/slaider2.png"></div>
+                          <div><img src="./img/slaider3.png"></div>
+                          <div><img src="./img/right.png"class="arrow"></div>
+                      </div>
+                <div class="time">
+                   <div class="ready">ready in</div>
+                    <div class="forty">40</div>
+                    <div class="mins">mins</div>
+                </div>
+            </div>
         </div>
-
+        </div>
+        </div>
+<div class="jibarito">
+    <div class="container">
+        <div class="jibarito-title">The Jibarito sandwich</div>
+        <div class="jibarito-subtitle">the best sandwich you’ve ever tasted!</div>
+        <div class="jibarito-leftcontent">
+        <div class="three-rows">
+                <div class="three-rows__item">
+                        @@include('./partials/cards-left/_cards-left.html', {
+                        "pathImg": "./img/grain.png",
+                        "cardsName": "Class aptent",
+                        "cardsDescription": "Quot alienum persecuti ut eam,nam ad atqui primis nusquam."
+                        })
+                      </div>
+                      <div class="three-rows__item">
+                        @@include('./partials/cards-left/_cards-left.html', {
+                        "pathImg": "./img/eggs.png",
+                        "cardsName": "Nulla eget",
+                        "cardsDescription": "Nullam dictum felis eu pede mollis pretium Integer tincidunt."
+                        })
+                      </div>
+                      <div class="three-rows__item">
+                        @@include('./partials/cards-left/_cards-left.html', {
+                        "pathImg": "./img/chesee.png",
+                        "cardsName": "Sed nibh purus",
+                        "cardsDescription": "Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae."
+                        })
+                      </div>
+                    </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

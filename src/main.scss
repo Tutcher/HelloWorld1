@@ -66,9 +66,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     max-height: 900px;
-    background: url(/img/firstbackgr.jpg) no-repeat;
+    background: url(/img/firstbackgr.jpg) no-repeat  #9b9990;
     background-size: cover;
-    background-color: #9b9990;
     padding-top:285px;
     margin-bottom: 10px;
 }
@@ -80,7 +79,7 @@ nav {
     color: #fff;
     text-align: center;
 }
-.breadshadow .shadow {
+/*.breadshadow .shadow {
     display: block;
     width: 1px;
     height: 1px;
@@ -89,8 +88,8 @@ nav {
     left: 50%;
     box-shadow: -2px 1px 197px 71px rgba(0,0,0,0.36);
     background-color:
-    z-index:1;
-}
+    z-index: 1;
+}*/
 .introtitle {
     margin:0;
     font-family: "PlayfairDisplay"; 
@@ -128,12 +127,14 @@ nav {
     margin:auto;
     width: 80px;
     height: 80px;
+
 }
 .circle img{
     padding-top:18px;
 }
 .center {
-    background-color: #fcfaf7;
+    background:url(/img/texture.jpg) no-repeat #fcfaf7;
+    background-size: cover;
     max-height: 750px;
     box-shadow:-2px 3px 11px 0px rgba(50, 50, 50, 0.81);
 }
@@ -217,6 +218,7 @@ nav {
     justify-content: center;
     width: 55%;
     padding-right: 0;
+    min-width: 700px;
     
 }
 .artOfPicta img {
@@ -224,6 +226,7 @@ height: 250px;
 width: 290px;
 padding:0 10px 20px;
 position: relative;
+
 }
 .img {
     position: relative;
@@ -261,6 +264,56 @@ position: relative;
     height: 750px;
     background: url(/img/placeholder.jpg) no-repeat;
     background-size: cover;
+    
+}
+.container1 {
+    max-width: 1070px;
+    margin: 0 auto;
+   
+}
+.content {
+    display: flex;
+    padding-top: 140px; 
+}
+.jam {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 87%);   
+}
+.whitefon {
+    position: absolute;
+    margin-left: 395px;
+    z-index: 1;
+}
+.tasty {
+    background:url(/img/windmill.png) no-repeat bottom right #fff ;
+    text-align: left; 
+    padding:70px 80px 40px 0;
+    z-index: 2;
+    margin-left: -80px;
+    height: 510px;
+    position: relative;
+}
+
+.tasty-title,.jibarito-title {
+    font-family: "alegreya-bold";
+    font-size: 48px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+.season,.jibarito-subtitle {
+    font-family: "alegreya-bold";
+    text-transform: uppercase;
+    color:#a47d5e;
+    margin-bottom: 65px;
+    letter-spacing: 2px;
+}
+.tasty-text {
+    font-family: "ProximaNova";
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-weight: 500; 
+    line-height: 25px;
+    padding-right: 65px;
+    margin-bottom: 50px;
 }
 @import "./partials/star-item/star-item.scss";
 
@@ -275,6 +328,65 @@ position: relative;
 [id*="star"]:checked + .star__label,
 [id*="star"]:hover + .star__label  {
     background-image: url("/img/star-gold.png");
+}
+.slaider {
+    padding-top:40px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+    align-items: center;
+}
+.slaider img:hover {
+    box-shadow:0px 0px 24px 0px rgba(50, 50, 50, 0.75);
+    cursor: pointer;
+    border-radius: 50%;
+}
+.time {
+    background:url(/img/shield.png) no-repeat bottom right #fff ;
+   position: absolute;
+   z-index: 3;
+   bottom:350px;
+   left:470px;
+    box-shadow:0px 0px 24px 0px rgba(50, 50, 50, 0.75);
+    text-align: center;
+    padding: 30px 50px;
+}  
+.ready {
+    font-family: "alegreya-bold"; 
+    text-transform: uppercase;
+    color:#a47d5e;
+    font-size: 18px;
+    letter-spacing: 5px;
+   min-width: 120px;
+}
+.forty {
+    font-family: "alegreya-bold"; 
+    font-size: 92px;
+    color: #dfc691;
+    letter-spacing: 15px;
+}
+.mins {
+    font-family: "alegreya-bold"; 
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+@import "./partials/cards-left/cards-left.scss";
+.jibarito {
+    padding-top: 100px;
+}
+.jibarito-title,.jibarito-subtitle {
+    text-align: center;
+}
+.jibarito-subtitle {
+    margin-bottom: 0;
+}
+.three-rows {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    width: 30%;
+ }
 }
 @font-face {
     font-family: "Scriptina"; 
@@ -295,4 +407,4 @@ position: relative;
  @font-face {
     font-family: "PlayfairDisplay"; 
     src: url("../fonts/PlayfairDisplay.ttf") format("truetype"); 
-} 
+    } 
