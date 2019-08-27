@@ -16,11 +16,12 @@ body {
     margin: 0 auto;
 }
 header {
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     z-index:1;
     width: 100%;
+    min-width: 1600px;
     background:rgba(0, 0, 0, 0.205);
 }
 .inner {
@@ -36,10 +37,14 @@ header {
     color:#fff;
     text-transform:capitalize;
     letter-spacing: 6px;
-  
 }
 nav {
     display:flex;
+}
+.menu {
+    display:flex;
+    justify-content: space-between;
+    width: 70%;
 }
 .link { 
     text-transform: uppercase;
@@ -47,14 +52,6 @@ nav {
     font-family: "Alegreya";
     text-decoration: none;    
 }
-.link:after {
-    content: "~";
-    padding: 25px 40px;
-    color:#fff
-  }
-.link:last-child:after {
-    content: " ";
-  }
 .linkimg {
     padding-top:10px;
 }
@@ -68,8 +65,11 @@ nav {
     max-height: 900px;
     background: url(/img/firstbackgr.jpg) no-repeat  #9b9990;
     background-size: cover;
+    min-width: 1600px;
     padding-top:285px;
     margin-bottom: 10px;
+    position: relative;
+  
 }
 .introinner {
     width: 100%;
@@ -78,18 +78,18 @@ nav {
     text-shadow: 0 0 1px black;
     color: #fff;
     text-align: center;
+    
 }
-/*.breadshadow .shadow {
-    display: block;
+.breadshadow {
     width: 1px;
     height: 1px;
+    text-align: center;
+    box-shadow: -2px 1px 197px 71px black;
     position: absolute;
     top: 50%;
     left: 50%;
-    box-shadow: -2px 1px 197px 71px rgba(0,0,0,0.36);
-    background-color:
     z-index: 1;
-}*/
+}
 .introtitle {
     margin:0;
     font-family: "PlayfairDisplay"; 
@@ -106,6 +106,10 @@ nav {
     margin-bottom: 68px;
     letter-spacing: 3px;
     line-height: 35px;
+}
+.introtitle,.wave,.introsubtitle {
+    position: relative;
+    z-index: 2;
 }
 .btn {
     display: inline-block;
@@ -135,6 +139,7 @@ nav {
 .center {
     background:url(/img/texture.jpg) no-repeat #fcfaf7;
     background-size: cover;
+    min-width: 1600px;
     max-height: 750px;
     box-shadow:-2px 3px 11px 0px rgba(50, 50, 50, 0.81);
 }
@@ -264,7 +269,7 @@ position: relative;
     height: 750px;
     background: url(/img/placeholder.jpg) no-repeat;
     background-size: cover;
-    
+    min-width: 1600px;
 }
 .container1 {
     max-width: 1070px;
@@ -373,6 +378,8 @@ position: relative;
 @import "./partials/cards-left/cards-left.scss";
 .jibarito {
     padding-top: 100px;
+    height: 920px;
+    min-width: 1600px;
 }
 .jibarito-title,.jibarito-subtitle {
     text-align: center;
@@ -385,8 +392,114 @@ position: relative;
   flex-direction: column;
 
   &__item {
-    width: 30%;
+    text-align: center;
  }
+}
+.jibarito-info {
+    display:flex;
+    justify-content:space-between;
+}
+.jibarito-leftcontent {
+    margin-right: 100px;
+}
+.sandwich {
+    margin-top: 80px;
+    background: url(/img/sandwich.jpg) no-repeat;
+    background-size: cover;
+    width:840px;
+    height: 555px;
+    position: relative;
+    border:5px solid #fff;
+    font-family: "alegreya-bold"; 
+}
+.full {
+    background: #fff;
+    border:1px dashed #dfc691;
+    color: #dfc691;
+    font-size:18px;
+    padding-top:20px;
+    position: absolute;
+    z-index:1;
+    top:510px;
+    right:700px;
+    text-align: center;
+    height: 60px;
+    width: 170px;
+}
+.sandwich-block {
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    left:630px;
+    bottom:-20px;
+    text-align: center;
+}
+.prep,.cook,.s-ready {
+    font-size:18px;
+    color:#a47d5e;
+}
+.sandwich-time {
+    font-size: 60px;
+    letter-spacing: 5px;
+    padding-bottom:10px;
+}
+.sandwich-time-down {
+    font-size: 92px;
+    color:#dfc691;
+    letter-spacing: 5px;
+}
+.sandwich-mins {
+    font-size: 18px;
+}
+.blocktop,.blockcenter,.blockdown {
+    height: 200px;
+    width: 200px;
+    background: #fff;
+    opacity: 0.9;
+    padding-top: 40px;
+}
+.blocktop {
+    margin-bottom:1px;
+}
+.blockdown {
+    background: url(/img/shield.png) no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+footer {
+    padding-top:100px;
+    height: 230px;
+    background: url(/img/shield.png) no-repeat;
+    background-size: cover;
+    min-width: 1600px;
+}
+.footer-content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-left-content,.footer-right-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 42%;
+    border-top:1px solid #b6b5b2;
+    border-bottom:1px solid #b6b5b2;
+    height: 70px;
+}
+.footer-link {
+    text-decoration: none;
+    font-family: "Alegreya"; 
+    color: #56534c;
+    text-transform: uppercase;
+}
+.footer-logo {
+    font-family: "Scriptina"; 
+    font-size: 30px;
+    width: 10%;
+    letter-spacing: 7px;
+    
 }
 @font-face {
     font-family: "Scriptina"; 
