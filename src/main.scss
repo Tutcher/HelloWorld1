@@ -11,7 +11,7 @@ body {
 *,*:before,*:after {
     box-sizing: border-box;
 }
-.container {
+.container2 {
     max-width: 1260px;
     margin: 0 auto;
 }
@@ -19,9 +19,10 @@ header {
     position: fixed;
     top:0;
     left:0;
-    z-index:1;
+    z-index:5;
     width: 100%;
     min-width: 1600px;
+    min-width: 1160px;
     background:rgba(0, 0, 0, 0.205);
 }
 .inner {
@@ -55,9 +56,11 @@ nav {
 .linkimg {
     padding-top:10px;
 }
-
 .linkcenter {
     margin:0 28px;
+}
+.burger {
+    display: none;  
 }
 .intro {
     display: flex;
@@ -110,7 +113,7 @@ nav {
     position: relative;
     z-index: 2;
 }
-.btn {
+.btn1 {
     display: inline-block;
     vertical-align: top;
     font-family: "alegreya-bold";
@@ -121,16 +124,15 @@ nav {
     border:1px dashed rgba(255, 255, 255,.5);
     padding: 20px 50px;
     letter-spacing: 3px;
-    margin-bottom: 180px;
+    margin-bottom: 145px;
 }
 .circle {
     background-color: #fff;
     border-radius: 50%;
     display:block;
-    margin:auto;
+    margin: 0 auto;
     width: 80px;
     height: 80px;
-
 }
 .circle img{
     padding-top:18px;
@@ -223,14 +225,12 @@ nav {
     width: 55%;
     padding-right: 0;
     min-width: 700px;
-    
 }
 .artOfPicta img {
-height: 250px;
-width: 290px;
-padding:0 10px 20px;
-position: relative;
-
+    height: 250px;
+    width: 290px;
+    padding:0 10px 20px;
+    position: relative;
 }
 .img {
     position: relative;
@@ -289,7 +289,7 @@ position: relative;
 .tasty {
     background:url(/img/windmill.png) no-repeat bottom right #fff ;
     text-align: left; 
-    padding:70px 80px 40px 0;
+    padding:40px 80px 40px 0;
     z-index: 2;
     margin-left: -80px;
     height: 510px;
@@ -315,7 +315,7 @@ position: relative;
     font-weight: 500; 
     line-height: 25px;
     padding-right: 65px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 @import "./partials/star-item/star-item.scss";
 
@@ -324,24 +324,26 @@ position: relative;
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
-
 [id*="star"]:checked ~ .star__label,
 [id*="star"]:hover ~ .star__label,
 [id*="star"]:checked + .star__label,
 [id*="star"]:hover + .star__label  {
     background-image: url("/img/star-gold.png");
 }
-.slaider {
-    padding-top:40px;
-    display: flex;
-    justify-content: space-between;
-    min-width: 400px;
-    align-items: center;
+.carousel {
+    width: 425px;
+    height: 95px;
+    margin-top: 30px;
 }
-.slaider img:hover {
-    box-shadow:0px 0px 24px 0px rgba(50, 50, 50, 0.75);
-    cursor: pointer;
-    border-radius: 50%;
+.sort1,.sort2,.sort3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.d-block {
+    height: 95px;
+    width: 95px;
+    padding:0px 5px 0;
 }
 .time {
     background:url(/img/shield.png) no-repeat bottom right #fff ;
@@ -417,7 +419,7 @@ position: relative;
     border:1px dashed #dfc691;
     color: #dfc691;
     font-size:18px;
-    padding-top:20px;
+    padding-top:18px;
     position: absolute;
     z-index:1;
     top:510px;
@@ -442,12 +444,14 @@ position: relative;
 .sandwich-time {
     font-size: 60px;
     letter-spacing: 5px;
-    padding-bottom:10px;
+    padding-bottom:-10px;
 }
 .sandwich-time-down {
     font-size: 92px;
     color:#dfc691;
     letter-spacing: 5px;
+    margin-top: -30px;
+    margin-bottom: -10px;
 }
 .sandwich-mins {
     font-size: 18px;
@@ -468,7 +472,7 @@ position: relative;
     opacity: 1;
 }
 footer {
-    padding-top:100px;
+    padding-top:110px;
     height: 230px;
     background: url(/img/bg.png) no-repeat;
     background-size: cover;
@@ -508,26 +512,69 @@ footer {
 @font-face {
     font-family: "Scriptina"; 
     src: url("../fonts/scriptina.ttf") format("truetype"); 
-    } 
+} 
 @font-face {
     font-family: "Alegreya"; 
     src: url("../fonts/alegreya.ttf") format("truetype"); 
-    } 
-    @font-face {
-        font-family: "alegreya-bold"; 
-        src: url("../fonts/alegreya-bold.ttf") format("truetype"); 
-        } 
+} 
+ @font-face {
+    font-family: "alegreya-bold"; 
+    src: url("../fonts/alegreya-bold.ttf") format("truetype"); 
+ } 
 @font-face {
     font-family: "ProximaNova"; 
     src: url("../fonts/ProximaNova.ttf") format("truetype"); 
-    } 
+} 
  @font-face {
     font-family: "PlayfairDisplay"; 
     src: url("../fonts/PlayfairDisplay.ttf") format("truetype"); 
-    } 
- @media header (width: 1450px) {
-        .menu {display: none;}
-        .social {display: none;}
-      }
-
-      
+} 
+@media screen and (max-width: 1190px) {
+     .linkimg,.link {
+         display: none;
+    }
+      .burger {
+          display:block;
+          position: absolute;
+          right: 850px;
+          top:20px;
+          width: 200px;
+    }
+      .burger img {
+        width: 30px;
+        height: 30px;   
+    }
+    .burger button {
+        border-radius: 10%;
+    }
+    .burger-item {
+        display:none;
+        background:rgba(0, 0, 0, 0.205);
+    }
+    .burger-item a {
+        text-decoration:none;
+        color:#fff;
+        transition:background .2s ease-in-out;
+        text-transform: uppercase;
+        padding:15px 10px;
+    }
+    .burger-item a:hover {
+        color:red;
+    }
+    .burger-item li {
+        list-style:none; 
+    }
+    .burger-picta {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding:20px 10px;
+    }
+    .burger-item img {
+        width: 15px;
+        height: 15px;  
+    }
+    .burger:hover .burger-item {
+        display:block;
+    }
+ }
