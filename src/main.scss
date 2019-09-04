@@ -1,3 +1,305 @@
-* {
-    outline: 1px solid red;
+@import "./normalize.scss";
+
+body {
+  margin: 0;
+  font: 11px "Ubuntu";
+  color:#6e747b;
+  background-color: #fff;
+  width: 100%;
 }
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+header {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  background:red;
+  max-width: 1600px;
+  min-width: 900px;
+}
+.container {
+  max-width: 930px;
+  min-width: 900px;
+  margin: 0 auto;
+  background: rgba(205, 50, 179, 0.445);
+}
+.inner {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background: yellow;
+  height: 80px;
+}
+.logo {
+  font: 28px "Capture-it";
+  color:#23afc8;
+  letter-spacing: 2px;
+}
+.menu {
+  background: #c82389;
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+.link {
+  background: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding:33px 20px;
+}
+.home {
+  padding:33px 15px;
+  background: url(/img/home-down.png) no-repeat center bottom #12a3d6;
+  color: #c5f4ff;
+  background-size: 100%;
+}
+.blog {
+  background: #f98561;
+  border-radius: 10%;
+  margin: 25px 0 20px;;
+  padding:10px 25px;
+  color:#fff;
+}
+.search {
+  background: #6191f9;
+  width: 12%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.search-link {
+  padding:0;
+}
+.search-picta {
+  background: url(/img/search-picta.png) no-repeat center #f98561;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.slider {
+  background: url(/img/slider.jpg) no-repeat;
+  background-size: cover;
+  margin-top:79px;
+  height: 490px;
+  max-width: 1600px;
+  min-width: 900px;
+}
+.services {
+  height: 310px;
+  position: relative;
+}
+.our-services-center {
+  position: absolute;
+  left:535px;
+  bottom:293px;
+  z-index: 1;
+  text-align: center;
+  font:22px "Bebas_neue_regular";
+  color: #fff; 
+  width: 145px;
+  height: 35px;
+  background: #2190c1;
+  border-radius: 5px;
+  padding-top: 4px;
+}
+
+@import "./partials/services-card/services-card.scss";
+
+.services-four-column {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: 25%;
+ }
+}
+.our-portfolio {
+  max-width: 1600px;
+  min-width: 900px;
+  height: 510px;
+  background: #2e3e4f;
+}
+.our-portfolio-content {
+  padding-top: 55px;
+}
+.our-portfolio-head {
+  display: flex;
+  justify-content: space-between;
+}
+.our-portfolio-title {
+  font:30px "Bree-serif"; 
+  color: #f98561;
+}
+.our-portfolio-head button {
+  background: #2190c1;
+  border-radius: 10%;
+  border:none;
+  width: 90px;
+  height: 30px;
+} 
+.our-portfolio-head a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@import "./partials/portfolio-card/portfolio-card.scss";
+
+.portfolio-three-column {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: 31%;
+ }
+}
+.testimonials {
+  height: 363px;
+}
+.container2 {
+  max-width: 785px;
+  min-width: 785px;
+  margin: 0 auto;
+  background: #a5d4ce;
+}
+.testimon-content {
+  padding-top: 40px;
+  text-align: center;
+}
+.testimon-title {
+  font:27px "Bebas";
+  color: #2190c1;
+}
+.testimon-content p {
+  font: 25px "Bree-serif";
+  color: #515862;
+}
+
+@import "./partials/team-card/team-card.scss";
+
+.team-three-column {
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    width: 20%;
+ }
+}
+footer {
+  background-color: #2e3e4f;
+  height: 335px;
+  color:#fff;
+  font-size: 12px;
+  max-width: 1600px;
+  min-width: 900px;
+}
+.footer-content {
+  display:flex;
+  justify-content: space-around;
+}
+.footer-left-content {
+  width: 20%
+}
+.footer-right-content {
+  width: 18%;
+}
+.footer-center-content {
+  width: 35%;
+}
+.footer-title {
+  font:30px "Bebas_neue_regular";
+  color:#f98561;
+  padding: 25px 0 20px;
+}
+.footer-content p {
+  line-height: 1.5;
+}
+.footer-line{
+  margin: 15px 0;
+}
+.footer-week {
+  color:#a4b2c0;
+}
+.footer-subtitle {
+  font-size: 13px;
+  color: #2190c1;
+}
+.footer-form {
+  padding: 20px 0;
+}
+.footer-input {
+  width: 100%;
+  height: 30px;
+  border:none;
+  border-radius:5px;
+}
+.sign-up {
+  border-radius: 10%;
+  color: #fff;
+  background-color: #12a3d6;
+  border: none;
+  height: 27px;
+  width: 75px;
+  margin: 15px 0 15px 250px;
+}
+.contact-item {
+  margin-top:15px;
+  display: flex;
+  justify-content: space-between;
+}
+.number-mail {
+  font-size:13px;
+}
+.inside-item {
+  padding: 20px 0;
+}
+
+@font-face {
+  font-family: "Bebas"; 
+  src: url("../fonts/Bebas.ttf") format("truetype"); 
+} 
+@font-face {
+  font-family: "Bebas_neue_regular"; 
+  src: url("../fonts/Bebas_neue_regular.ttf") format("truetype"); 
+} 
+@font-face {
+  font-family: "Big-caslon-medium"; 
+  src: url("../fonts/Big-caslon-medium.ttf") format("truetype"); 
+} 
+@font-face {
+  font-family: "Bree-serif"; 
+  src: url("../fonts/Bree-serif.ttf") format("truetype"); 
+} 
+@font-face {
+  font-family: "Brushscript"; 
+  src: url("../fonts/Brushscript.ttf") format("truetype"); 
+} 
+@font-face {
+  font-family: "Capture-it"; 
+  src: url("../fonts/Capture-it.ttf") format("truetype"); 
+} 
+@font-face {
+  font-family: "Giddyup-Std"; 
+  src: url("../fonts/Giddyup-Std.ttf") format("truetype"); 
+} 
+@font-face {
+  font-family: "Lobster"; 
+  src: url("../fonts/Lobster.ttf") format("truetype"); 
+} 
+@font-face {
+  font-family: "Ubuntu"; 
+  src: url("../fonts/Ubuntu.ttf") format("truetype"); 
+} 
+@font-face {
+  font-family: "Ubuntu_Condensed"; 
+  src: url("../fonts/Ubuntu_Condensed.ttf") format("truetype"); 
+} 
+@font-face {
+  font-family: "Ubuntu-bold"; 
+  src: url("../fonts/Ubuntu-bold.ttf") format("truetype"); 
+} 

@@ -1,0 +1,54 @@
+.team-card {
+  padding-top:25px;
+  font: 14px "Ubuntu-bold"; 
+  color: #00a7e6;
+  text-align: center;
+
+  &__post {
+    font-family: "Ubuntu";     
+  }
+  &__img {
+    .foto {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;  
+      margin-top:15px;
+    }
+    .under-foto {
+      width: 70px;
+      height: 5px;
+      margin-bottom: -3px;
+    }
+    .under-foto-orange {
+      display: none;
+    }
+  }
+}
+.team-card:hover {
+  color:#f8a791;
+  transition: all .2s ease-out;
+
+  .team-card__img .foto{
+    border: 2px solid #f8a791;
+  }
+
+  .team-card__img .under-foto {
+    display:none;
+  }
+
+  .team-card__img .under-foto-orange {
+    display:block;
+    width: 70px;
+    height: 10px;
+    margin-top: 6px;
+    margin-left: 20px;
+  }
+}
+  @font-face {
+    font-family: "Ubuntu-bold"; 
+    src: url("../fonts/Ubuntu-bold.ttf") format("truetype"); 
+  } 
+  @font-face {
+    font-family: "Ubuntu"; 
+    src: url("../fonts/Ubuntu.ttf") format("truetype"); 
+  } 
