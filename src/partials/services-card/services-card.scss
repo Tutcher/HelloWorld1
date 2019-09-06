@@ -1,10 +1,10 @@
 .services-card {
-  padding: 50px 0 35px;
+  padding: 35px 0 33px;
   font-family: "Bree-serif"; 
   color: #515862;
   text-align: center;
   font-size: 17px;
-
+  
     &__img {
       padding-bottom: 25px;
         img {
@@ -16,21 +16,11 @@
       padding:10px 40px 0;
       text-align: center;
       color: #6e6d6bc5;
-      font-size: 11px;
-      font-family: "Ubuntu"; 
-      position: relative;
-  
-      &:after {
-        content: "Details...";
-        position: absolute;
-        top:60px;
-        left:95px;
-        cursor: pointer;
-        font-family: "Ubuntu-bold";
-        font-size: 11px;
-        color:#8bbddd;
-      }
+      font: 11px "Ubuntu"; 
     }
+  }
+  .services-card__details:hover .services-card__details__more {
+      display: block;
   }
   @font-face {
     font-family: "Bree-serif"; 
