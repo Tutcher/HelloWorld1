@@ -1,25 +1,23 @@
-.services-card {
+.work-card {
   padding: 35px 0 33px;
   font-family: "Bree-serif"; 
-  color: #515862;
+  color: #2190c1;
   text-align: center;
-  font-size: 17px;
-  
+  font-size: 20px;
+  border-right:1px solid #a5a5a5; 
+  border-left:1px solid #a5a5a5; 
+  margin-right: -1px;
     &__img {
       padding-bottom: 25px;
-        img {
-          width: 119px;
-          height: 119px;
-        }
+      height: 100px; 
     }
     &__description {
-      padding:10px 40px 0;
+      padding:10px 0 0;
       text-align: center;
       color: #6e6d6bc5;
-      font: 11px "Ubuntu"; 
+      font: 13px "Ubuntu"; 
     }
   }
-  
   @font-face {
     font-family: "Bree-serif"; 
     src: url("../fonts/Bree-serif.ttf") format("truetype"); 
@@ -28,4 +26,4 @@
     font-family: "Ubuntu"; 
     src: url("../fonts/Ubuntu.ttf") format("truetype"); 
   } 
-   
+ 

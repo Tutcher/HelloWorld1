@@ -4,7 +4,7 @@ body {
   margin: 0;
   font: 11px "Ubuntu";
   color:#6e747b;
-  background-color: #fff;
+  background-color: #f4f4f4;
   width: 100%;
 }
 *,*:before,*:after {
@@ -15,7 +15,6 @@ header {
   top:0;
   left:0;
   width: 100%;
-  background:red;
   max-width: 1600px;
   min-width: 900px;
 }
@@ -23,28 +22,26 @@ header {
   max-width: 930px;
   min-width: 900px;
   margin: 0 auto;
-  background: rgba(205, 50, 179, 0.445);
 }
 .inner {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  background: yellow;
   height: 80px;
 }
 .logo {
   font: 28px "Capture-it";
   color:#23afc8;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .menu {
-  background: #c82389;
   display: flex;
   width: 40%;
   height: 100%;
 }
 .link {
-  background: #fff;
+  
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
@@ -116,7 +113,7 @@ header {
 }
   .subtitle-slider {
     font-size: 14px;
-   background: #f98561;
+   background:#f98561;
    width: 450px;
    margin: 0 auto;
    border-radius: 5px;
@@ -124,12 +121,12 @@ header {
 .services {
   height: 310px;
   position: relative;
- 
+ padding-top:27px;
 }
 .our-services-center {
   position: absolute;
-  left:555px;
-  bottom:290px;
+  left:600px;
+  bottom:260px;
   z-index: 1;
   text-align: center;
   font:22px "Bebas_neue_regular";
@@ -139,6 +136,7 @@ header {
   background: #2190c1;
   border-radius: 5px;
   padding-top: 4px;
+  text-transform: uppercase;
 }
 
 @import "./partials/services-card/services-card.scss";
@@ -174,11 +172,13 @@ header {
   border:none;
   width: 90px;
   height: 30px;
+  padding-bottom: 5px;
 } 
 .our-portfolio-head a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
+ 
 }
 
 @import "./partials/portfolio-card/portfolio-card.scss";
@@ -194,15 +194,19 @@ header {
 .testimonials {
   height: 363px;
 }
+
 .container2 {
   max-width: 785px;
   min-width: 785px;
   margin: 0 auto;
-  background: #a5d4ce;
 }
 .testimon-content {
   padding-top: 40px;
   text-align: center;
+}
+.testimon-content>p {
+  border-bottom:1px solid rgb(180, 173, 173);
+  padding-bottom: 16px;
 }
 .testimon-title {
   font:27px "Bebas";
@@ -251,6 +255,8 @@ footer {
   font:30px "Bebas_neue_regular";
   color:#f98561;
   padding: 25px 0 20px;
+  text-transform: uppercase;
+  word-spacing: 5px;
 }
 .footer-content p {
   line-height: 1.5;
@@ -274,6 +280,11 @@ footer {
   border:none;
   border-radius:5px;
 }
+.mail-picta {
+  height: 25px;
+  width: 35px;
+  margin-left:-10px;
+}
 .sign-up {
   border-radius: 10%;
   color: #fff;
@@ -284,7 +295,7 @@ footer {
   margin: 15px 0 15px 250px;
 }
 .contact-item {
-  margin-top:15px;
+  margin-top:5px;
   display: flex;
   justify-content: center;
 }
@@ -303,7 +314,8 @@ footer {
   color: #c5f4ff;
   background-size: 100%;
 }
-.portfolio-slider {
+.another-slider {
+  margin-top:80px;
   height: 295px;
   background: url(/img/portfolio-slider.jpg) no-repeat;
   background-size: cover;
@@ -311,10 +323,10 @@ footer {
   max-width: 1600px;
   min-width: 900px;
 }
-.portfolio-slider-title {
+.another-slider-title {
   font:80px "Bebas_neue_regular";
   text-align: center;
-  padding-top: 65px;
+  padding-top: 40px;
   color: #cccece;
 }
 .portfolio-center-title {
@@ -322,6 +334,8 @@ footer {
   color: #2190c1;
   padding: 30px 0;
   text-align: center;
+  text-transform: uppercase;
+  word-spacing: 15px;
 }
 .portfolio-border {
   border-top: 1px solid #2191c154;
@@ -337,6 +351,7 @@ footer {
  text-align: center;
  padding-top: 13px;
  cursor: pointer;
+ text-transform: uppercase;
 
 }
 .category-item {
@@ -383,6 +398,7 @@ height: 150px;
 }
 .theme {
   font:19px "Big-caslon-medium";
+  text-transform: uppercase;
 }
 .template {
   font:20px "Brushscriptstd";
@@ -454,6 +470,236 @@ font:26px "Giddyup-Std";
 }
 .close:hover { background: #00d9ff; }
 
+/*==============About==========*/
+
+.about {
+  background: url(/img/home-down.png) no-repeat center bottom #12a3d6;
+  color: #c5f4ff;
+  background-size: 100%;
+}
+.about-center-text,.about-title {
+  padding: 30px 15px 0;
+  text-align: center;
+}
+.about-subtitle {
+  font:50px "Bebas_neue_regular";
+  color: #2190c1;
+}
+.paragraphs {
+font-size:13px;
+line-height: 1.5;
+}
+.paragraph-bold {
+  font-family: "Ubuntu-bold";
+}
+.paragraph-normal {
+  font-family:  "Ubuntu";
+}
+.about-title {
+  font:65px "Bebas";
+  color:#515862;
+  word-spacing: 15px;
+  padding-bottom: 30px;
+}
+
+@import "./partials/work-card/work-card.scss";
+
+.work-four-column {
+  display: flex;
+  justify-content: baseline;
+
+  &__item {
+    width: 25%;
+ }
+}
+.free-container {
+  border-top:1px solid #a5a5a5; 
+  border-bottom: 5px solid #a5a5a5;
+}
+.workers {
+  height: 800px;
+}
+.workers-subtitle {
+  text-align: center;
+  padding: 30px 0;
+}
+.workers-person-arround {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.workers-person-back {
+  background: #d3d3d3;
+  position: relative;
+  width: 40%;
+  height: 290px;
+  margin-bottom:30px;
+}
+
+.workers-person {
+  background: #fff;
+  border:1px solid #d3d3d3;
+  position: absolute;
+  top:10px;
+  left:10px;
+  width: 100%;
+  height: 290px;
+  z-index: 1;
+  text-align: center;
+}
+.workers-person-right{
+  left:-10px;
+}
+.workers-person img {
+  float:left;
+  padding:10px 30px 10px 30px;
+}
+.worker-post {
+  font:17px "Bree-serif";
+}
+.worker-name {
+  font:32px "Bebas_neue_regular";
+  color:#2190c1;
+  
+}
+.worker-mail {
+  font:13px;
+  color:#94979b;
+  padding-bottom:15px;
+}
+.triangle-down-blue {
+  width: 0;
+  height: 0;
+  border-top: 30px solid #2190c1;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  margin-left: 200px;
+}
+.triangle-down-orange {
+  width: 0;
+  height: 0;
+  border-top: 30px solid #f98561;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  margin-left: 200px;
+}
+.worker-person-text {
+  font: 13px;
+  clear: both;
+  text-align: left;
+  line-height: 2;
+  padding:10px;
+}
+
+
+
+ /*===========Contact=============*/
+
+ .contact {
+  background: url(/img/home-down.png) no-repeat center bottom #12a3d6;
+  color: #c5f4ff;
+  background-size: 100%;
+}
+.contact-top {
+  text-align: center;
+}
+.contact-title {
+font:50px "Bebas_neue_regular";
+color: #2190c1;
+padding-top:30px; 
+text-transform: uppercase;
+}
+.contact-top p {
+  font:13px;
+padding: 0 15px 30px;
+line-height: 2;
+}
+.contact-center {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.contact-form-subtitle,.check-text {
+  text-transform: uppercase;
+}
+/*Forms==================*/
+.contact-form {
+
+  min-width: 35%;
+  padding:0 20px 10px;
+	border-radius: 4px;
+	background-color: #ebebeb;
+  box-shadow: 0 0 3px #666;
+  height: 470px;
+}
+
+.contact-form-title, .field-block {
+	margin-bottom: 20px;
+}
+
+.field-block label, .field-block .field {
+	display: block;
+	width: 100%;
+}
+
+.field-block label {
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+.field-block .field {
+	font-size: 16px;
+	padding: 8px 12px;
+	line-height: 1.5;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.field-block .field:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.field-block textarea {
+	resize: none;
+}
+
+.check-text {
+	font-size: 14px;
+	vertical-align: top;
+}
+
+.form-button {
+	cursor: pointer;
+	font-size: 16px;
+	padding: 6px 12px;
+	margin-bottom: 5px;
+}
+.contact-form {
+  margin-right:80px;
+}
+.contact-info {
+  border-left:1px dashed #2191c18e;
+  padding-left:80px;
+}
+.contact-address {
+  display: flex;
+  flex-direction: column;
+}
+.contact-address-item {
+    white-space: pre;
+}
+.contact-address-item img {
+  float: left;
+}
+iframe {
+  padding-top:30px;
+}
+
+
 
 @media screen and (max-width: 877px) {
   .social,.menu {
@@ -514,10 +760,6 @@ font:26px "Giddyup-Std";
      display:block;
  }
 }
-
-
-
-
 @font-face {
   font-family: "Bebas"; 
   src: url("../fonts/Bebas.ttf") format("truetype"); 
