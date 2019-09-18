@@ -16,11 +16,11 @@ header {
   left:0;
   width: 100%;
   max-width: 1600px;
-  min-width: 900px;
+  min-width: 500px;
 }
 .container1 {
   max-width: 930px;
-  min-width: 900px;
+  min-width: 500px;
   margin: 0 auto;
 }
 .inner {
@@ -103,7 +103,7 @@ header {
   margin-top:80px;
   max-height: 490px;
   max-width: 1600px;
-  min-width: 900px;
+  min-width: 500px;
 }
 .carousel-caption {
   margin-bottom: 160px;
@@ -125,8 +125,8 @@ header {
 }
 .our-services-center {
   position: absolute;
-  left:600px;
-  bottom:260px;
+  left:44%;
+  bottom:92%;
   z-index: 1;
   text-align: center;
   font:22px "Bebas_neue_regular";
@@ -151,7 +151,7 @@ header {
 }
 .our-portfolio {
   max-width: 1600px;
-  min-width: 900px;
+  min-width: 500px;
   height: 510px;
   background: #2e3e4f;
 }
@@ -197,7 +197,7 @@ header {
 
 .container2 {
   max-width: 785px;
-  min-width: 785px;
+  min-width: 500px;
   margin: 0 auto;
 }
 .testimon-content {
@@ -222,6 +222,7 @@ header {
 
 .team-three-column {
   max-width: 550px;
+  min-width: 500px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -236,7 +237,7 @@ footer {
   color:#fff;
   font-size: 12px;
   max-width: 1600px;
-  min-width: 900px;
+  min-width: 500px;
 }
 .footer-content {
   display:flex;
@@ -303,6 +304,15 @@ footer {
 .number-mail {
   font-size:13px;
   padding-left: 10px;
+ 
+}
+.number-mail a{
+  color:#fff;
+  text-decoration: none;
+}
+.number-mail a:hover{
+  color:#12a3d6;
+  text-decoration: underline;
 }
 .inside-item {
   padding: 20px 0;
@@ -321,7 +331,7 @@ footer {
   background-size: cover;
   padding-top: 80px;
   max-width: 1600px;
-  min-width: 900px;
+  min-width: 500px;
 }
 .another-slider-title {
   font:80px "Bebas_neue_regular";
@@ -392,6 +402,7 @@ height: 150px;
   justify-content: space-around;
   align-items: center;
   color: #adadad;
+  
 }
 .blueway {
   font: 21px "Bebas";
@@ -435,7 +446,7 @@ font:26px "Giddyup-Std";
   bottom: 0;
   left: 0;
   background: rgba(0,0,0,0.8);
-  z-index: 10;
+  z-index: 16;
   transition: opacity 400ms ease-in;
   display: none;
   pointer-events: none;
@@ -692,6 +703,14 @@ line-height: 2;
 .contact-address-item {
     white-space: pre;
 }
+.contact-address-item a{
+text-decoration: none;
+color:#6e747b;
+}
+.contact-address-item a:hover{
+  text-decoration: underline;
+  color:#2190c1;
+  }
 .contact-address-item img {
   float: left;
 }
@@ -700,7 +719,103 @@ iframe {
 }
 
 
-
+@media screen and (max-width: 949px) {
+  .about-title {
+    border-bottom: 1px solid #a5a5a5;
+  }
+  .free-container{
+  border:none;
+  }
+  .work-four-column {
+    display:none
+  }
+}
+@media screen and (max-width: 935px) {
+  .our-portfolio {
+    height: 1100px;
+  }
+  .our-portfolio-head button {
+    display: none;
+  }
+  .our-portfolio-title{
+    font-size:18px;
+    margin-top:-35px;
+    margin-left: 70px;
+  }
+  .portfolio-three-column {
+    flex-wrap: wrap;
+    width: 500px;
+  }
+  .portfolio-three-column__item {
+    width: 70%;
+    margin-top:-65px;
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 920px) {
+  
+  .workers-person-arround{
+    flex-direction: column;
+  }
+  .workers-person-back {
+    width: 80%;
+    margin: 10px auto;
+    background: #f98561;
+    height: 250px;
+  }
+  .triangle-down-blue,.triangle-down-orange {
+    display:none;
+  }
+  .workers-person {
+    height: 250px;
+      }
+     .worker-mail {
+       margin-top:15px;
+     } 
+     .workers {
+       height: 1250px;
+     }
+}
+@media screen and (max-width: 880px) {
+  .slider {
+      display: none;
+ }
+ header {
+  border-bottom:1px solid rgb(172, 162, 162);
+ }
+    .services {
+   
+   margin-top:80px;
+   height: 600px;
+   margin-bottom:-50px;
+ }
+ .our-services-center {
+  display: none;
+}
+ .services-four-column {
+  flex-wrap: wrap;
+ }
+ .services-four-column__item {
+  width: 50%;
+  margin-top:-30px;
+ }
+ footer{
+   height: 370px;
+ }
+ .footer-left-content {
+   display:none;
+ }
+ .footer-center-content{
+  width: 35%
+ }
+ .sign-up {
+   margin-left:100px;
+ }
+ .footer-right-content {
+  margin-left:-100px;
+  width: 35%;
+ }
+}
 @media screen and (max-width: 877px) {
   .social,.menu {
       display: none;
@@ -708,8 +823,8 @@ iframe {
    .burger {
        display:block;
        position: absolute;
-       right: 650px;
-       top:20px;
+       left: 100px;
+       top:25px;
        width: 150px;
        z-index: 15;
  }
@@ -738,10 +853,12 @@ iframe {
      color:#fff;
      transition:background .2s ease-in-out;
      text-transform: uppercase;
-     padding:15px 10px;
+    
+     
  }
  .burger-item a:hover {
      color:#2190c1;
+     
  }
  .burger-item li {
      list-style:none; 
@@ -750,7 +867,7 @@ iframe {
      display:flex;
      flex-direction: row;
      justify-content: space-around;
-     padding:20px 10px;
+     padding:15px 10px;
  }
  .burger-item img {
      width: 15px;
@@ -759,7 +876,119 @@ iframe {
  .burger:hover .burger-item {
      display:block;
  }
+ .burger-another {
+   top:13px;
+   width: 150px;
+   
+ }
+ .burger-item-another>li a {
+   display:inline-block;
+   font-size:16px;
+   padding-top:5px;
+ }
 }
+@media screen and (max-width: 871px) {
+  .portfolio-border {
+    display:none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .testimonials {
+    height: 313px;
+  }
+  .testimon-title {
+    width: 450px;
+    font-size:18px;
+  }
+  .testimon-content p {
+    font-size:12px;
+    width: 450px;
+    border:none;
+  }
+  .team-three-column {
+    margin-left: -50px;
+  }
+  .portfolio-center-title {
+    font-size: 56px;
+  }
+  .modalDialog {
+    padding-top:100px;
+  }
+  .about-title {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 750px) {
+.contact-center {
+  flex-direction: column;
+ 
+}
+.contact-form {
+  margin:10px auto;
+  width: 60%;
+}
+.contact-info {
+  border:none;
+  display: flex;
+}
+.contact-address,iframe {
+  width: 40%;
+}
+iframe {
+  margin-top:-15px;
+}
+}
+@media screen and (max-width: 730px) {
+  .workers-person {
+    height: 280px;
+      }
+      .workers-person-back {
+        height: 280px;
+      }
+      .workers {
+        height: 1350px;
+      }
+}
+@media screen and (max-width: 700px) {
+  .our-clients {
+    flex-wrap:wrap;  
+  }
+  .our-clients>div {
+    padding: 15px 20px 0;
+  }
+  .our-clients-border {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact-info {
+    flex-direction: column;
+  }
+  .contact-address,iframe {
+    width: 60%;
+  }
+  iframe {
+    margin-top:-5px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .portfolio-center-title {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 510px) {
+.contact-top p {
+  margin-right: 5px;
+}
+.paragraphs {
+  margin-right: 5px;
+}
+}
+  
+
+
+
+
 @font-face {
   font-family: "Bebas"; 
   src: url("../fonts/Bebas.ttf") format("truetype"); 
