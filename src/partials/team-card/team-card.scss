@@ -27,15 +27,13 @@
 .team-card:hover {
   color:#f8a791;
   transition: all .2s ease-out;
-
-  .team-card__img .foto{
+}
+  .team-card__img .foto {
     border: 2px solid #f8a791;
   }
-
   .team-card__img .under-foto {
     display:none;
   }
-
   .team-card__img .under-foto-orange {
     display:block;
     width: 70px;
