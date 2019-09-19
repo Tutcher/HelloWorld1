@@ -229,7 +229,7 @@ header {
 }
 footer {
   background-color: #2e3e4f;
-  height: 335px;
+  height: 325px;
   color:#fff;
   font-size: 12px;
   max-width: 1600px;
@@ -255,18 +255,20 @@ footer {
   text-transform: uppercase;
   word-spacing: 5px;
 }
-.footer-content p {
-  line-height: 1.5;
-}
-.footer-line{
-  margin: 15px 0;
-}
 .footer-week {
   color:#a4b2c0;
+  border-bottom: 1px solid #a4b2c0;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+.footer-week:last-child {
+  border-bottom:none;
 }
 .footer-subtitle {
   font-size: 13px;
   color: #2190c1;
+  border-top:1px solid #a4b2c0;
+  padding-top: 20px;
 }
 .footer-form {
   padding: 20px 0;
@@ -280,7 +282,6 @@ footer {
 .mail-picta {
   height: 25px;
   width: 35px;
-  margin-left:-10px;
 }
 .sign-up {
   border-radius: 10%;
@@ -753,6 +754,11 @@ iframe {
     height: 1250px;
   }
 }
+@media screen and (max-width: 892px) {
+  .footer-left-content {
+    display:none;
+  }
+}
 @media screen and (max-width: 880px) {
   .slider {
       display: none;
@@ -776,10 +782,7 @@ iframe {
     margin-top:-30px;
   }
   footer{
-    height: 370px;
-  }
-  .footer-left-content {
-    display:none;
+    height: 355px;
   }
   .footer-center-content{
     width: 35%
@@ -790,6 +793,9 @@ iframe {
   .footer-right-content {
     margin-left:-100px;
     width: 35%;
+  }
+  .footer-title-contact {
+    margin-left:75px;
   }
 }
 @media screen and (max-width: 877px) {
@@ -888,6 +894,12 @@ iframe {
   .about-title {
     font-size: 36px;
   }
+  .footer-index {
+    margin-top:1px;
+  }
+  .footer-title-contact {
+    margin-left:55px;
+  }
 }
 @media screen and (max-width: 750px) {
   .contact-center {
@@ -929,17 +941,21 @@ iframe {
   .our-clients-border {
     height: 200px;
   }
-}
-@media screen and (max-width: 600px) {
   .contact-info {
     flex-direction: column;
   }
   .contact-address,iframe {
     width: 60%;
+    margin-left:50px;
   }
   iframe {
     margin-top:-5px;
   }
+}
+@media screen and (max-width: 650px) {
+.footer-title-contact {
+  margin-left:35px;
+ }
 }
 @media screen and (max-width: 570px) {
   .portfolio-center-title {
@@ -953,6 +969,9 @@ iframe {
   .paragraphs {
     margin-right: 5px;
   }
+  .footer-title-contact {
+    margin-left:15px;
+   }
 }
 @font-face {
   font-family: "Bebas"; 

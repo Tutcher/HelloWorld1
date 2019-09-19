@@ -17,19 +17,19 @@
     .under-foto {
       width: 70px;
       height: 5px;
-      margin-bottom: -7px;
+      margin-bottom: -8px;
     }
     .under-foto-orange {
       display: none;
     }
   }
 }
-.team-card:hover {
+.team-card:hover  {
   color:#f8a791;
   transition: all .2s ease-out;
-}
+
   .team-card__img .foto {
-    border: 2px solid #f8a791;
+    transform: scale(1.1);
   }
   .team-card__img .under-foto {
     display:none;
