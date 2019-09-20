@@ -12,18 +12,11 @@
       height: 100px; 
     }
     &__description {
-      padding:10px 0 0;
+      padding:10px 5px 0;
       text-align: center;
       color: #6e6d6bc5;
       font: 12px "Ubuntu"; 
     }
   }
-  @font-face {
-    font-family: "Bree-serif"; 
-    src: url("../fonts/Bree-serif.ttf") format("truetype"); 
-  } 
-  @font-face {
-    font-family: "Ubuntu"; 
-    src: url("../fonts/Ubuntu.ttf") format("truetype"); 
-  } 
+  
  
