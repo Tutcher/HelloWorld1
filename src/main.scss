@@ -47,15 +47,15 @@
   font-family: "Ubuntu-bold"; 
   src: url("../fonts/Ubuntu-bold.ttf") format("truetype"); 
 } 
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font: 11px "Ubuntu";
   color:#6e747b;
   background-color: #f4f4f4;
   width: 100%;
-}
-*,*:before,*:after {
-  box-sizing: border-box;
 }
 header {
   position: absolute;
@@ -91,6 +91,7 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   padding:33px 21px;
+  color: #23afc8;
 }
 .link:hover {
   color:#fff;
@@ -99,11 +100,11 @@ header {
   transition: all .2s ease-in-out;
   text-decoration: none;
 }
+.link:visited {
+  color: #23afc8;;
+}
 .link:visited:hover {
   color: #fff;
-}
-.link:visited {
-  color: #515862;
 }
 .home {
   background: url(/img/home-down.png) no-repeat center bottom #12a3d6;
@@ -164,8 +165,11 @@ header {
 }
 .slider {
   margin-top:80px;
-  max-height: 490px;
+  height: 490px;
   min-width: 500px;
+}
+.d-block {
+  height: 490px;
 }
 .carousel-caption {
   margin-bottom: 160px;
@@ -605,6 +609,9 @@ font:26px "Giddyup-Std";
   text-align: center;
   padding: 30px 0;
 }
+.workers-person {
+  overflow: hidden;
+}
 .workers-person-arround {
   display: flex;
   justify-content: space-around;
@@ -796,6 +803,16 @@ font:26px "Giddyup-Std";
 iframe {
   padding-top:30px;
 }
+@media screen and (min-width: 1540px) {
+  .our-services-center {
+    left: 46%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .logo {
+    margin-left:5px;
+  }
+}
 @media screen and (max-width: 949px) {
   .about-title {
     border-bottom: 1px solid #a5a5a5;
@@ -859,7 +876,7 @@ iframe {
 }
 @media screen and (max-width: 880px) {
   .slider {
-      display: none;
+    display: none;
   }
   header {
     border-bottom:1px solid rgb(172, 162, 162);
@@ -901,7 +918,7 @@ iframe {
   .burger {
     display:block;
     position: absolute;
-    left: 140px;
+    left: 145px;
     top:25px;
     width: 140px;
     z-index: 15;
@@ -957,11 +974,6 @@ iframe {
     padding-top:5px;
   }
 }
-@media screen and (max-width: 871px) {
-  .portfolio-border {
-    display:none;
-  }
-}
 @media screen and (max-width: 800px) {
   .testimonials {
     height: 313px;
@@ -992,6 +1004,11 @@ iframe {
   }
   .footer-title-contact {
     margin-left:55px;
+  }
+}
+@media screen and (max-width: 871px) {
+  .portfolio-border {
+    display:none;
   }
 }
 @media screen and (max-width: 750px) {
