@@ -76,7 +76,6 @@
   align-items: center;
   color: #adadad;
 }
-
 .blueway {
   font: 21px "Bebas";
 }
@@ -358,9 +357,9 @@ font:26px "Giddyup-Std";
 #img {
   position: absolute;
   border-radius: 5px;
-  border:2px solid #f98561;
   display:none;
   z-index: 20;
+  box-shadow:7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 .contact-info {
   border-left:1px dashed #2191c18e;

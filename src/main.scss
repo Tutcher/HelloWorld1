@@ -282,6 +282,7 @@ footer {
 }
 .footer-center-content {
   width: 35%;
+  position: relative;
 }
 .footer-title {
   font:30px "Bebas_neue_regular";
@@ -319,7 +320,7 @@ footer {
   height: 25px;
   width: 35px;
 }
-.sign-up {
+.sign {
   border-radius: 10%;
   color: #fff;
   background-color: #12a3d6;
@@ -327,6 +328,12 @@ footer {
   height: 27px;
   width: 75px;
   margin: 15px 0 15px 250px;
+}
+#img_footer {
+  display:none;
+  position:absolute;
+  top:67%;
+  left:90%
 }
 .contact-item {
   margin-top:5px;
