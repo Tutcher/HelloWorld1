@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>A-design</title>
     <link rel="shortcut icon" href="./img/icon.png">
-    <script src="./js/main.js"></script>
+    <script src="/js/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -54,7 +54,7 @@
         <div class="contact-center">
           <div class="contact-form">
             <h2 class="contact-form-title">Feedback form</h2>
-            <form>
+            <form id="my_form">
               <div class="field-block">
                 <label class="contact-form-subtitle" for="name">your name:</label>
                 <input class="field" name="name" required type="text">
@@ -68,11 +68,14 @@
                 <textarea class="field" required name="message" rows="4"></textarea>
               </div>
               <div class="field-block">
-                <input name="check" checked type="checkbox">
+                <input type="checkbox" name="check" checked required >
                 <span class="check-text">i voluntarly submit my data</span>
               </div>
-              <button class="form-button" type="submit">Send</button>
+              <input type="submit" class="form-submit" value="Send"> 
             </form>
+          </div>
+          <div id="img">
+            <img src="img/thankyou.jpg">
           </div>
           <div class="contact-center-right">
             <div class="contact-info">

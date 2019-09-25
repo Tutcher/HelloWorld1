@@ -1,9 +1,9 @@
 .team-card {
-  padding:25px 0 0;
+  padding:36px 0 0;
   font: 14px "Ubuntu-bold"; 
   color: #00a7e6;
   text-align: center;
-
+ 
   &__post {
     font-family: "Ubuntu";     
   }
@@ -12,12 +12,12 @@
       width: 70px;
       height: 70px;
       border-radius: 50%;  
-      margin-top:15px;
+      margin-top:10px;
     }
     .under-foto {
       width: 70px;
-      height: 5px;
-      margin-bottom: -6px;
+      height: 7px;
+      margin-top:15px;
     }
     .under-foto-orange {
       display: none;
@@ -37,9 +37,8 @@
   .team-card__img .under-foto-orange {
     display:block;
     width: 70px;
-    height: 10px;
-    margin-top: 5px;
+    height: 12px;
     margin-left: 20px;
+    margin-top:10px;
   }
 }
- 
