@@ -11,10 +11,13 @@ document.addEventListener('click', function(e) {
   img.style.display = 'none';
 });
 var Img = document.getElementById('img_footer');
-document.getElementById('form_footer').addEventListener('submit', function(e) {
+var form = document.getElementById('form_footer');
+if (form) {
+form.addEventListener('submit', function(e) {
   Img.style.display = 'block';
   e.preventDefault();
 });
+}
 document.addEventListener('click', function(e) {
   var target = e.target;
   if(target == Img.firstElementChild || target == Img) return;

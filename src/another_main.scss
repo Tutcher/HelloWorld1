@@ -34,7 +34,6 @@
   color:#fff;
   text-align: center;
   padding-top: 13px;
-  cursor: pointer;
   text-transform: uppercase;
 }
 .category-item {
@@ -107,6 +106,27 @@ font:26px "Giddyup-Std";
   width: 22px;
   height: 20px;
   margin-right: 5px;
+}
+.footer-title-another {
+  text-align: center;
+  margin:35px 0;
+  border-bottom:1px solid #a4b2c0;
+}
+.logo-another,.logo-another:visited {
+  font: 36px "Capture-it";
+  color:#23afc8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left:75px;
+}
+.logo-another:hover,.logo-another:visited:hover {
+  text-decoration: none;
+  color:#23afc8;
+}
+.logo-another>span {
+  font-size: 30px;
+  vertical-align: top;
 }
 /*========ModalWindows======*/
 
